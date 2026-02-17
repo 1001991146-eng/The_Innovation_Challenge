@@ -31,7 +31,7 @@ const CyberStage: React.FC<CyberStageProps> = ({ onComplete }) => {
           </h2>
           <p className="text-slate-600 text-sm leading-relaxed">התקבל מייל חשוד. לחצו על <strong className="text-red-500">3 דגלים אדומים</strong> (Red Flags) בתוך המייל כדי לדווח עליו.</p>
         </div>
-        <span className="text-xs font-bold text-slate-400 bg-slate-50 px-2 py-1 rounded-md">שלב 4/4</span>
+        <span className="text-xs font-bold text-slate-400 bg-slate-50 px-2 py-1 rounded-md">שלב 6/6</span>
       </div>
 
       <div className="bg-white rounded-3xl shadow-inner border border-slate-100 overflow-hidden text-right text-sm mb-8">

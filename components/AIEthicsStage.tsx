@@ -40,7 +40,7 @@ const AIEthicsStage: React.FC<AIEthicsStageProps> = ({ onComplete }) => {
             <Settings className="w-6 h-6" />
             {fixAvailable && <span className="absolute top-1 right-1 w-2.5 h-2.5 bg-red-500 rounded-full ring-2 ring-white"></span>}
           </button>
-          <span className="text-xs font-bold text-slate-400 bg-slate-50 px-2 py-1 rounded-md">שלב 2/4</span>
+          <span className="text-xs font-bold text-slate-400 bg-slate-50 px-2 py-1 rounded-md">שלב 2/6</span>
         </div>
       </div>
 

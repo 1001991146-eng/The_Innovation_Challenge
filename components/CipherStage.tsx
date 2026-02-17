@@ -31,7 +31,7 @@ const CipherStage: React.FC<CipherStageProps> = ({ onComplete }) => {
           </h2>
           <p className="text-slate-500 text-sm">המערכת נעולה. השתמשו במפענח הדיגיטלי כדי לחשוף את סיסמת הכניסה.</p>
         </div>
-        <span className="text-xs font-bold text-slate-400 bg-slate-50 px-2 py-1 rounded-md">שלב 1/4</span>
+        <span className="text-xs font-bold text-slate-400 bg-slate-50 px-2 py-1 rounded-md">שלב 1/6</span>
       </div>
 
       <div className="bg-slate-900 p-8 rounded-3xl text-center mb-8 relative overflow-hidden group">

@@ -4,6 +4,8 @@ export enum GameStage {
   CIPHER = 'cipher',
   AI_ETHICS = 'ai_ethics',
   LOGIC = 'logic',
+  BOOLEAN_LOGIC = 'boolean_logic',
+  BINARY_SEARCH = 'binary_search',
   CYBER = 'cyber',
   SUCCESS = 'success'
 }

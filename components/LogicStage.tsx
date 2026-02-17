@@ -57,14 +57,14 @@ const LogicStage: React.FC<LogicStageProps> = ({ onComplete }) => {
             <GitBranch className="text-indigo-900 w-6 h-6" />
             אלגוריתם אבטחה
           </h2>
-          <p className="text-slate-600 text-sm">יש לכתוב סקריפט לאבטחת השרת. לחצו על הפקודות <strong>בסדר הנכון</strong> כדי לבנות את האלגוריתם.</p>
+          <p className="text-slate-600 text-sm leading-relaxed">בנו תוכנית אבטחה לשרת. לחצו על הפקודות <strong>בסדר הנכון</strong> כדי ליצור רצף פעולות הגיוני.</p>
         </div>
-        <span className="text-xs font-bold text-slate-400 bg-slate-50 px-2 py-1 rounded-md">שלב 3/4</span>
+        <span className="text-xs font-bold text-slate-400 bg-slate-50 px-2 py-1 rounded-md">שלב 3/6</span>
       </div>
 
       <div className={`bg-slate-50 p-6 rounded-3xl mb-8 flex flex-col gap-3 min-h-[180px] border-2 border-dashed transition-colors ${error ? 'border-red-300 bg-red-50' : 'border-slate-200'}`}>
         <div className="flex justify-between items-center mb-1">
-          <span className="text-[10px] font-mono text-slate-400">SecurityService.js</span>
+          <span className="text-[10px] font-mono text-slate-400">SecurityFlow.js</span>
           {stack.length > 0 && (
             <button onClick={() => setStack([])} className="text-slate-400 hover:text-indigo-600 transition-colors">
               <RefreshCw className="w-3.5 h-3.5" />
@@ -85,7 +85,7 @@ const LogicStage: React.FC<LogicStageProps> = ({ onComplete }) => {
             ) : '---'}
           </div>
         ))}
-        {error && <div className="text-center text-xs font-bold text-red-500 mt-2">סדר שגוי! נסה שוב.</div>}
+        {error && <div className="text-center text-xs font-bold text-red-500 mt-2">סדר שגוי! נסו לחשוב מה בא קודם.</div>}
       </div>
 
       <div className="grid grid-cols-1 gap-3">

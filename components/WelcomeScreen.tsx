@@ -18,14 +18,14 @@ const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onStart }) => {
       </h1>
       
       <p className="text-lg text-slate-600 mb-8 leading-relaxed">
-        העולם זקוק לחדשנות טכנולוגית. יש לכם 10 דקות לפרוץ את המחסומים, לפתור את האתגרים ולהוכיח שיש לכם את מה שנדרש כדי להוביל.
+        העולם זקוק לחדשנות טכנולוגית. יש לכם 15 דקות לפרוץ את המחסומים, לפתור את האתגרים ולהוכיח שיש לכם את מה שנדרש כדי להוביל.
       </p>
       
       <div className="w-full space-y-3 mb-10 text-right">
         {[
           { icon: <ShieldCheck className="w-5 h-5 text-cyan-500" />, text: "סייבר ואבטחת מידע" },
           { icon: <BrainCircuit className="w-5 h-5 text-purple-500" />, text: "בינה מלאכותית ואתיקה" },
-          { icon: <Code2 className="w-5 h-5 text-indigo-600" />, text: "חשיבה אלגוריתמית" }
+          { icon: <Code2 className="w-5 h-5 text-indigo-600" />, text: "חשיבה אלגוריתמית וסיבוכיות" }
         ].map((item, idx) => (
           <div key={idx} className="flex items-center gap-3 bg-white/40 p-3 rounded-2xl border border-slate-100">
             {item.icon}

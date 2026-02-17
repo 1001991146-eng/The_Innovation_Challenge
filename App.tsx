@@ -1,22 +1,11 @@
 
-import React, { useState, useEffect, useCallback } from 'react';
-import { 
-  Rocket, 
-  Cpu, 
-  Lock, 
-  Bot, 
-  GitBranch, 
-  AlertOctagon, 
-  Trophy, 
-  ArrowLeft,
-  ShieldCheck,
-  BrainCircuit,
-  Code2
-} from 'lucide-react';
+import React, { useState, useEffect } from 'react';
 import WelcomeScreen from './components/WelcomeScreen';
 import CipherStage from './components/CipherStage';
 import AIEthicsStage from './components/AIEthicsStage';
 import LogicStage from './components/LogicStage';
+import BooleanLogicStage from './components/BooleanLogicStage';
+import BinarySearchStage from './components/BinarySearchStage';
 import CyberStage from './components/CyberStage';
 import SuccessScreen from './components/SuccessScreen';
 import Navbar from './components/Navbar';
@@ -24,7 +13,7 @@ import { GameStage } from './types';
 
 const App: React.FC = () => {
   const [stage, setStage] = useState<GameStage>(GameStage.WELCOME);
-  const [timeLeft, setTimeLeft] = useState(600); // 10 minutes
+  const [timeLeft, setTimeLeft] = useState(900); // 15 minutes
   const [isTimerActive, setIsTimerActive] = useState(false);
 
   useEffect(() => {
@@ -70,6 +59,10 @@ const App: React.FC = () => {
         return <AIEthicsStage onComplete={nextStage} />;
       case GameStage.LOGIC:
         return <LogicStage onComplete={nextStage} />;
+      case GameStage.BOOLEAN_LOGIC:
+        return <BooleanLogicStage onComplete={nextStage} />;
+      case GameStage.BINARY_SEARCH:
+        return <BinarySearchStage onComplete={nextStage} />;
       case GameStage.CYBER:
         return <CyberStage onComplete={nextStage} />;
       case GameStage.SUCCESS:
